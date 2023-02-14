@@ -9,7 +9,7 @@ import { getSession } from 'next-auth/react';
 import { dbOrders } from '../../database';
 import { IOrder } from '../../interfaces';
 import { PayPalButtons } from "@paypal/react-paypal-js";
-import tesloApi from '../../api/tesloApi';
+import tesloApi from '../../axiosApi/tesloApi';
 import CircularProgress from '@mui/material/CircularProgress';
 
 export type OrderResponseBody = {

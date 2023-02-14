@@ -6,7 +6,7 @@ import { DataGrid, GridColDef, GridRenderCellParams } from '@mui/x-data-grid';
 import { Grid, Select, MenuItem } from '@mui/material';
 import useSWR from 'swr';
 import { IUser } from '../../interfaces';
-import { tesloApi } from '../../api';
+import { tesloApi } from '../../axiosApi';
 
 const UsersPage: NextPage = () => {
 

@@ -2,7 +2,7 @@ import { FC, useReducer, ReactNode, useEffect } from 'react';
 import { useRouter } from 'next/router';
 import { useSession, signOut } from "next-auth/react"
 import Cookies from 'js-cookie';
-import { tesloApi } from '../../api';
+import { tesloApi } from '../../axiosApi';
 import { IUser } from '../../interfaces';
 import { AuthContext, authReducer } from './';
 import axios from 'axios';
