@@ -111,4 +111,4 @@ const DashboardPage: NextPage = () => {
   )
 }
 
-export default DashboardPage
+export default DashboardPage;
