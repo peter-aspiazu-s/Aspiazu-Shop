@@ -1,6 +1,13 @@
 import { FC, useContext } from 'react';
 import NextLink from 'next/link';
-import { AppBar, Toolbar, Link, Typography, Box, Button } from '@mui/material';
+
+import AppBar from '@mui/material/AppBar';
+import Toolbar from '@mui/material/Toolbar';
+import Link from '@mui/material/Link';
+import Typography from '@mui/material/Typography';
+import Box from '@mui/material/Box';
+import Button from '@mui/material/Button'
+
 import { UIContext } from '../../context';
 
 export const AdminNavbar: FC = () => {

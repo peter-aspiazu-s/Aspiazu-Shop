@@ -1,15 +1,25 @@
 import { useState } from 'react';
 import { NextPage, GetServerSideProps } from 'next';
 import { useRouter } from 'next/router';
-import { Typography, Grid, Card, CardContent, Divider, Box, Link, Chip } from '@mui/material';
+
+import Typography from '@mui/material/Typography';
+import Grid from '@mui/material/Grid';
+import Card from '@mui/material/Card';
+import CardContent from '@mui/material/CardContent';
+import Divider from '@mui/material/Divider';
+import Box from '@mui/material/Box';
+import Chip from '@mui/material/Chip';
+
 import { ShopLayout } from '../../components/layouts';
 import { CartList, OrderSummary } from '../../components/cart';
-import { CreditCardOffOutlined, CreditScoreOutlined } from '@mui/icons-material';
 import { getSession } from 'next-auth/react';
 import { dbOrders } from '../../database';
 import { IOrder } from '../../interfaces';
 import { PayPalButtons } from "@paypal/react-paypal-js";
 import tesloApi from '../../axiosApi/tesloApi';
+
+import CreditCardOffOutlined from '@mui/icons-material/CreditCardOffOutlined';
+import CreditScoreOutlined from '@mui/icons-material/CreditScoreOutlined';
 import CircularProgress from '@mui/material/CircularProgress';
 
 export type OrderResponseBody = {

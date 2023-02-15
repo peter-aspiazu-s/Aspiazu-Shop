@@ -2,7 +2,13 @@ import { useState, useContext } from 'react';
 import { NextPage, GetStaticPaths, GetStaticProps } from 'next';
 import { useRouter } from 'next/router';
 import { ShopLayout } from '../../components/layouts';
-import { Grid, Box, Typography, Button, Chip } from '@mui/material';
+
+import Grid from '@mui/material/Grid';
+import Box from '@mui/material/Box';
+import Typography from '@mui/material/Typography';
+import Button from '@mui/material/Button';
+import Chip from '@mui/material/Chip';
+
 import { ProductSlideshow } from '../../components/products';
 import { ItemCounter } from '../../components/ui/ItemCounter';
 import { Sizeselector } from '../../components/products';

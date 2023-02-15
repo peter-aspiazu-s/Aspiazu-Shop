@@ -1,8 +1,12 @@
 import { NextPage } from 'next';
 import NextLink from 'next/link';
-import { Box, Link, Typography } from '@mui/material';
+
+import Box from '@mui/material/Box';
+import Link from '@mui/material/Link';
+import Typography from '@mui/material/Typography';
+
 import { ShopLayout } from '../../components/layouts/ShopLayout';
-import { RemoveShoppingCartOutlined } from '@mui/icons-material';
+import RemoveShoppingCartOutlined from '@mui/icons-material/RemoveShoppingCartOutlined';
 
 
 const EmptyPage: NextPage = () => {

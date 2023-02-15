@@ -2,30 +2,30 @@ import { FC, useEffect, useState, useRef, ChangeEvent } from 'react';
 import { GetServerSideProps } from 'next';
 import { AdminLayout } from '../../../components/layouts';
 import { IProduct } from '../../../interfaces';
-import { DriveFileRenameOutline, SaveOutlined, UploadOutlined } from '@mui/icons-material';
+import DriveFileRenameOutline from '@mui/icons-material/DriveFileRenameOutline';
+import SaveOutlined from '@mui/icons-material/SaveOutlined';
+import UploadOutlined from '@mui/icons-material/UploadOutlined';
 import { dbProducts } from '../../../database';
 import { useForm } from 'react-hook-form';
-import { 
-    Box, 
-    Button, 
-    capitalize, 
-    Card, 
-    CardActions, 
-    CardMedia, 
-    Checkbox, 
-    Chip, 
-    Divider, 
-    FormControl, 
-    FormControlLabel, 
-    FormGroup, 
-    FormLabel, 
-    Grid, 
-    ListItem, 
-    Paper, 
-    Radio, 
-    RadioGroup, 
-    TextField, 
-} from '@mui/material';
+import { capitalize } from '@mui/material';
+import Box from '@mui/material/Box';
+import Button from '@mui/material/Button';
+import Card from '@mui/material/Card';
+import CardActions from '@mui/material/CardActions';
+import CardMedia from '@mui/material/CardMedia';
+import Checkbox from '@mui/material/Checkbox';
+import Chip from '@mui/material/Chip';
+import Divider from '@mui/material/Divider';
+import FormControl from '@mui/material/FormControl';
+import FormControlLabel from '@mui/material/FormControlLabel';
+import FormGroup from '@mui/material/FormGroup';
+import FormLabel from '@mui/material/FormLabel';
+import Grid from '@mui/material/Grid';
+import Radio from '@mui/material/Radio';
+import RadioGroup from '@mui/material/RadioGroup';
+import TextField from '@mui/material/TextField';
+
+
 import { tesloApi } from '../../../axiosApi';
 import { Product } from '../../../models';
 import { useRouter } from 'next/router';

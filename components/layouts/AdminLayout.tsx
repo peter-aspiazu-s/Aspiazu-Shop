@@ -1,7 +1,8 @@
 import {FC, ReactNode} from 'react';
 import { SideMenu } from '../ui';
 import { AdminNavbar } from '../admin';
-import { Box, Typography } from '@mui/material';
+import Box from '@mui/material/Box';
+import Typography from '@mui/material/Typography';
 
 interface Props {
     children: ReactNode;

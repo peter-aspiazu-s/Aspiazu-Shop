@@ -4,12 +4,18 @@ import NextLink from 'next/link';
 import { signIn, getSession, getProviders } from 'next-auth/react'
 import { useRouter } from 'next/router';
 import { useForm } from 'react-hook-form';
-import { Box, Grid, Typography, TextField, Button, Link, Chip, Divider } from '@mui/material';
+import Box from '@mui/material/Box';
+import Grid from '@mui/material/Grid';
+import Typography from '@mui/material/Typography';
+import TextField from '@mui/material/TextField';
+import Button from '@mui/material/Button';
+import Link from '@mui/material/Link';
+import Chip from '@mui/material/Chip';
+import Divider from '@mui/material/Divider';
+
 import ErrorOutline from '@mui/icons-material/ErrorOutline';
 import { AuthLayout } from '../../components/layouts';
 import { validations } from '../../utils';
-// import { tesloApi } from '../../api';
-// import { AuthContext } from '../../context';
 
 type FormData = {
     email: string,
@@ -18,16 +24,15 @@ type FormData = {
 
 const LoginPage: NextPage  = () => {
 
-    const router = useRouter()
-    // const { loginUser } = useContext( AuthContext )
+    const router = useRouter();
     const { register, handleSubmit, formState: { errors } } = useForm<FormData>();
-    const [showError, setShowError] = useState(false)
+    const [showError, setShowError] = useState(false);
 
     const [providers, setProviders] = useState<any>({});
 
     useEffect(() => {
       getProviders().then( prov => {
-        // console.log({prov})
+        
         setProviders(prov);
       })
     
@@ -36,23 +41,9 @@ const LoginPage: NextPage  = () => {
 
     const onLoginUser = async( {email, password}: FormData ) => {
 
-        setShowError(false)
+        setShowError(false);
 
-        // const isValidLogin = await loginUser( email, password )
-
-        // if(!isValidLogin){
-        //     setShowError(true)
-        //     setTimeout(() => setShowError(false), 3000)
-
-        //     return
-        // }
-
-        // const destination = router.query.p?.toString() || '/'
-        // router.replace(destination)
-        // reemplaza esa página en la historia, es decir que luego de loguearse
-        // el usuario no podrá volver a la página anterior
-
-        await signIn('credentials', { email, password })
+        await signIn('credentials', { email, password });
 
     }
 

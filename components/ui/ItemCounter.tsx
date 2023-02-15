@@ -1,8 +1,9 @@
-import {FC} from 'react'
-import { Box, IconButton, Typography } from '@mui/material'
-// import { AddCircleOutline, RemoveCircleOutline } from '@mui/icons-material'
-import AddCircleOutline from '@mui/icons-material/AddCircleOutline'
-import RemoveCircleOutline from '@mui/icons-material/RemoveCircleOutline'
+import {FC} from 'react';
+import Box from '@mui/material/Box';
+import IconButton from '@mui/material/IconButton';
+import Typography from '@mui/material/Typography';
+import AddCircleOutline from '@mui/icons-material/AddCircleOutline';
+import RemoveCircleOutline from '@mui/icons-material/RemoveCircleOutline';
 
 interface Props {
   currentValue: number;

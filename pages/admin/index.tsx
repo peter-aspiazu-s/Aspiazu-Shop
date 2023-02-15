@@ -1,7 +1,8 @@
 import { NextPage } from 'next';
 import DashboardOutlined from '@mui/icons-material/DashboardOutlined';
 import { AdminLayout } from '../../components/layouts/AdminLayout';
-import { Grid, Typography } from '@mui/material';
+import Grid from '@mui/material/Grid';
+import Typography from '@mui/material/Typography';
 import { SummaryTile } from '../../components/admin';
 import CreditCardOffOutlined from '@mui/icons-material/CreditCardOffOutlined';
 import AttachMoneyOutlined from '@mui/icons-material/AttachMoneyOutlined';

@@ -1,6 +1,6 @@
 import { NextPage } from 'next';
 
-import { Typography } from '@mui/material'
+import Typography from '@mui/material/Typography';
 import { ShopLayout } from '../components/layouts';
 import { ProductList } from '../components/products/ProductList';
 import { useProducts } from '../hooks';

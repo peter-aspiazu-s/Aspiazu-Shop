@@ -1,7 +1,15 @@
 import { FC, useContext } from 'react';
 import NextLink from 'next/link';
 import { ItemCounter } from '../ui';
-import { Grid, Link, CardActionArea, CardMedia, Box, Typography, Button } from '@mui/material';
+
+import Grid from '@mui/material/Grid';
+import Link from '@mui/material/Link';
+import CardActionArea from '@mui/material/CardActionArea';
+import CardMedia from '@mui/material/CardMedia';
+import Box from '@mui/material/Box';
+import Typography from '@mui/material/Typography';
+import Button from '@mui/material/Button';
+
 import { CartContext } from '../../context';
 import { ICartProduct, IOrderItem } from '../../interfaces';
 

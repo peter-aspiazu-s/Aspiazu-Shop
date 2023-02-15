@@ -1,7 +1,8 @@
 import { NextPage } from 'next';
 import { AdminLayout } from '../../components/layouts/AdminLayout';
 import ConfirmationNumberOutlined from '@mui/icons-material/ConfirmationNumberOutlined';
-import { Grid, Chip } from '@mui/material';
+import Grid from '@mui/material/Grid';
+import Chip from '@mui/material/Chip';
 import { DataGrid, GridColDef, GridRenderCellParams } from '@mui/x-data-grid';
 import useSWR from 'swr';
 import { IOrder, IUser } from '../../interfaces';

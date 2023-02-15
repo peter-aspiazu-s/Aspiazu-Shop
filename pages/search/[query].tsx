@@ -1,5 +1,8 @@
 import { NextPage, GetServerSideProps } from 'next';
-import { Typography, Box } from '@mui/material';
+
+import Typography from '@mui/material/Typography';
+import Box from '@mui/material/Box';
+
 import { ShopLayout } from '../../components/layouts';
 import { ProductList } from '../../components/products/ProductList';
 import { dbProducts } from '../../database';

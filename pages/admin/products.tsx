@@ -1,6 +1,10 @@
 import { NextPage } from 'next';
 import { AdminLayout } from '../../components/layouts/AdminLayout';
-import { Grid, CardMedia, Link, Box, Button } from '@mui/material';
+import Grid from '@mui/material/Grid';
+import CardMedia from '@mui/material/CardMedia';
+import Link from '@mui/material/Link';
+import Box from '@mui/material/Box';
+import Button from '@mui/material/Button';
 import { DataGrid, GridColDef, GridRenderCellParams } from '@mui/x-data-grid';
 import useSWR from 'swr';
 import { IProduct } from '../../interfaces';

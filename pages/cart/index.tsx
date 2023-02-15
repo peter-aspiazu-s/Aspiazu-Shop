@@ -1,7 +1,15 @@
 import { useContext, useEffect } from 'react';
 import { NextPage } from 'next';
 import { ShopLayout } from '../../components/layouts';
-import { Typography, Grid, Card, CardContent, Divider, Box, Button } from '@mui/material';
+
+import Typography from '@mui/material/Typography';
+import Grid from '@mui/material/Grid';
+import Card from '@mui/material/Card';
+import CardContent from '@mui/material/CardContent';
+import Divider from '@mui/material/Divider';
+import Box from '@mui/material/Box';
+import Button from '@mui/material/Button';
+
 import { CartList, OrderSummary } from '../../components/cart';
 import { CartContext } from '../../context';
 import { useRouter } from 'next/router';

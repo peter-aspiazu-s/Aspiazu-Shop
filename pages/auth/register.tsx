@@ -4,7 +4,15 @@ import NextLink from 'next/link';
 import { useRouter } from 'next/router';
 import { signIn, getSession } from 'next-auth/react';
 import { useForm } from 'react-hook-form';
-import { Box, Grid, Typography, TextField, Button, Link, Chip } from '@mui/material';
+
+import Box from '@mui/material/Box';
+import Grid from '@mui/material/Grid';
+import Typography from '@mui/material/Typography';
+import TextField from '@mui/material/TextField';
+import Button from '@mui/material/Button';
+import Link from '@mui/material/Link';
+import Chip from '@mui/material/Chip';
+
 import { AuthLayout } from '../../components/layouts';
 import { validations } from '../../utils';
 import ErrorOutline from '@mui/icons-material/ErrorOutline';
@@ -36,9 +44,6 @@ const RegisterPage: NextPage  = () => {
             setTimeout(() => setShowError(false), 3000)
             return
         }
-
-        // const destination = router.query.p?.toString() || '/'
-        // router.replace(destination)
 
         await signIn('credentials', { email, password })
 

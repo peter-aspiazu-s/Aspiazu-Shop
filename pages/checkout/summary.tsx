@@ -2,7 +2,17 @@ import { useContext, useEffect, useState } from 'react';
 import { NextPage } from 'next';
 import NextLink from 'next/link';
 import { useRouter } from 'next/router';
-import { Typography, Grid, Card, CardContent, Divider, Box, Button, Link, Chip } from '@mui/material';
+
+import Typography from '@mui/material/Typography';
+import Grid from '@mui/material/Grid';
+import Card from '@mui/material/Card';
+import CardContent from '@mui/material/CardContent';
+import Divider from '@mui/material/Divider';
+import Box from '@mui/material/Box';
+import Button from '@mui/material/Button';
+import Link from '@mui/material/Link';
+import Chip from '@mui/material/Chip';
+
 import { ShopLayout } from '../../components/layouts';
 import { CartList, OrderSummary } from '../../components/cart';
 import { CartContext } from '../../context';
